@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-3">Completing Squares</h1>
+        <div class="alert alert-primary" role="alert">
+            Enter the integer coefficients of Quadratic Equation
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="a" autocomplete="off">
+            <span class="input-group-text">
+                &#119909;<sup>2</sup>
+            </span>
+            <span class="input-group-text">+</span>
+            <input type="text" class="form-control" id="b" autocomplete="off">
+            <span class="input-group-text">&#119909;</span>
+            <span class="input-group-text">+</span>
+            <input type="text" class="form-control" id="c" autocomplete="off">
+        </div>
+        <button class="btn btn-primary " type="button" id="calculateButton">calculate</button>
+        <div id="answerLabel">Answer:</div>
+        <div class="lead" id="answer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
