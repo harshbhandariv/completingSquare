@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.x::before{
+    content: '\01D465 ';
+    font-size: 1.5rem;
+}
+
+sup{
+    transform: translateY(2px);
+}
+
+#answerLabel{
+    font-size: 1.5em;
+    display: none;
+}
+
+#answerLabel.display {
+    display: block;
+}
+
+.input-group.mb-3{
+    width: 40%;
+}
+
+
+.fraction {
+    width: fit-content; 
+    display: inline-block; 
+    margin: 5px;
+    transform: translateY(18px);
+}
+
+.numerator {
+    border-bottom: 1px solid black; 
+    text-align: center;
+}
+
+.denominator {
+    text-align: center;
+}
