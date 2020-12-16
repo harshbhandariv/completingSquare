@@ -59,7 +59,15 @@ function GCD(num, den) {
 }
 
 function fractionHTML(n) {
-    return "<div class='fraction'><div class='numerator'>" + n[0] + "</div><div class='denominator'>" + n[1] + "</div></div>"
+    let decimal = n[0] / n[1];
+    if (!isTerminating(n[1])) decimal = Math.round(decimal * 100) / 100;
+    return "<div class='fraction' data-bs-toggle='tooltip' data-bs-placement='top' title='" + decimal + "'><div class='numerator'>" + n[0] + "</div><div class='denominator'>" + n[1] + "</div></div>"
+}
+
+function isTerminating(den) {
+    while (den % 2 == 0) den /= 2;
+    while (den % 5 == 0) den /= 5;
+    return den == 1;
 }
 calculateButton.addEventListener('click', completeSquare);
 // console.log(coeff_a, coeff_b, coeff_c, calculateButton, answer);
